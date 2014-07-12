@@ -1,7 +1,7 @@
 var config = {
 
 	// Your site title (format: page_title - site_title)
-	site_title: 'Raneto Docs',
+	site_title: 'Epic Raneto',
 
 	// The base URL of your site (can use %base_url% in Markdown files)
 	base_url: '',
@@ -10,7 +10,7 @@ var config = {
 	support_email: '',
 
 	// Footer copyright content
-	copyright: 'Copyright &copy; '+ new Date().getFullYear() +' - <a href="http://raneto.com">Powered by Raneto</a>',
+	copyright: 'Copyright &copy; '+ new Date().getFullYear() +' - <a href="http://raneto.com">Powered by Raneto</a> & <a href="http://epiceditor.com">Epic Editor</a>',
 
 	// Excerpt length (used in search)
 	excerpt_length: 400,

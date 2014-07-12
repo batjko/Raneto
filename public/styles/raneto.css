@@ -50,6 +50,10 @@
     color: #444;
 }
 
+.col-sm-9 {
+
+}
+
 .page-home .header .search-form { display: none; }
 .home-search { text-align: center; }
 
@@ -67,6 +71,7 @@
 }
 
 .content {
+   display: block;
     color: #555;
     margin: 40px 20px;
     padding: 40px;
@@ -86,8 +91,12 @@
 .content ol,
 .content pre,
 .content blockquote,
-.content table,
-.content iframe { margin-bottom: 1em; }
+.content table {margin-bottom: 1em}
+
+.content iframe {
+   margin-bottom: 1em;
+   min-height: 500px;
+}
 .content img {
     display: block;
     max-width: 100%;

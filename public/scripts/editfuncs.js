@@ -2,9 +2,9 @@ var epicOpts = {
    basePath: '/epiceditor',
    focusOnLoad: true,
    autogrow: {
-      minHeight: 500,
-      maxHeight: 800
+      minHeight: 500
    },
+   clientSideStorage: true,
    theme: {
       base: '/themes/base/epiceditor.css',
       preview: '/themes/preview/github.css',
@@ -19,5 +19,7 @@ $(document).ready(function(){
       editor.importFile('current.md', origText);
       editor.preview();
    });
-   
+
+
+
 });
