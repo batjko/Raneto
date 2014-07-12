@@ -1,6 +1,7 @@
 var express = require('express'),
     path = require('path'),
     fs = require('fs'),
+    url = require('url'),
     favicon = require('static-favicon'),
     logger = require('morgan'),
     cookieParser = require('cookie-parser'),
@@ -48,6 +49,10 @@ app.all('*', function(req, res, next) {
         });
     }
     else if(req.params[0]){
+
+      console.dir(req);
+
+
         var slug = req.params[0];
         if(slug == '/') slug = '/index';
 
