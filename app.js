@@ -49,10 +49,6 @@ app.all('*', function(req, res, next) {
         });
     }
     else if(req.params[0]){
-
-      console.dir(req);
-
-
         var slug = req.params[0];
         if(slug == '/') slug = '/index';
 
@@ -84,6 +80,7 @@ app.all('*', function(req, res, next) {
                     if(!meta.title) meta.title = raneto.slugToTitle(filePath);
                     // Content
                     content = raneto.processVars(content);
+                    var origText = content;
                     var html = marked(content);
 
                     return res.render('page', {
@@ -91,6 +88,7 @@ app.all('*', function(req, res, next) {
                         pages: pageList,
                         meta: meta,
                         content: html,
+                        original: origText,
                         body_class: 'page-'+ raneto.cleanString(slug),
                         last_modified: moment(stat.mtime).format('Do MMM YYYY')
                     });

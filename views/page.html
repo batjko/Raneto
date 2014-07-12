@@ -23,14 +23,14 @@
 
     </div>
     <div class="col-sm-9">
-
-      <a href="#edit" id="loadEdit">Edit</a>
-
-        <section id="epiceditor" class="content">
+        <section class="content">
             {{#meta.title}}<h1 class="title">{{meta.title}}</h1>{{/meta.title}}
 
+            <!--{{{ content }}} -->
+            <div id="epiceditor">
+               {{{ original }}}
 
-            {{{ content }}}
+            </div>
 
             <div class="page-meta clearfix">
                 {{#config.support_email}}
@@ -45,4 +45,10 @@
         </section>
 
     </div>
+
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/epiceditor/js/epiceditor.min.js"></script>
+    <script src="/scripts/editfuncs.js"></script>
+
+
 </div>
